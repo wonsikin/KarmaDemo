@@ -1,0 +1,18 @@
+{
+  "name": "karmaExample",
+  "version": "0.0.1",
+  "description": "Karma example",
+  "author": "Arthur Wang<fnghwsj@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-core": "^2.1.2",
+    "karma": "^0.12.28",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-jasmine": "^0.3.1",
+    "karma-safari-launcher": "^0.1.1"
+  }
+}
