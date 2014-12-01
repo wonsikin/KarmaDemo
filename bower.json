@@ -1,0 +1,28 @@
+{
+  "name": "karmaExample",
+  "version": "0.0.0",
+  "authors": [
+    "Arthur.WANG <fnghwsj@qq.com>"
+  ],
+  "description": "a demo for karma test in angular project",
+  "main": "app.js",
+  "keywords": [
+    "karma",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "ui-router": "~0.2.13",
+    "angular-mocks": "~1.3.4",
+    "angularjs": "~1.3.4"
+  }
+}
