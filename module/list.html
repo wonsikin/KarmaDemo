@@ -1,0 +1,18 @@
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th><i class="glyphicon glyphicon-user"></i>Name</th>
+                <th><i class="glyphicon glyphicon-phone"></i>Mobile</th>
+            </tr>
+        </thead>
+        <tbody style="text-align: left;">
+            <tr ng-repeat="item in contactList">
+                <td ng-bind="$index+1"></td>
+                <td ng-bind="item.name"></td>
+                <td ng-bind="item.mobile"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
