@@ -1,7 +1,7 @@
 /**
  * Created by ArthurWANG on 14/12/1.
  */
-angular.module('app', ['ui.router'])
+angular.module('app', ['ui.router','app.services'])
     .config([
         '$stateProvider',
         '$urlRouterProvider',
