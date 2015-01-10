@@ -24,19 +24,23 @@ angular.module('app', ['ui.router','app.services'])
             }).state('contact.list', {
                 url: '/list',
                 templateUrl: 'module/list.html',
-                controller: ['$scope', function ($scope) {
-                    $scope.contactList = [
-                        {
-                            name: 'Arthur Wang',
-                            mobile: '+86-12345678900'
-                        }
-                    ];
+                controller: ['$scope', 'storageService', function ($scope, storageService) {
+                    $scope.contactList = storageService.getAll();
                 }]
             }).state('contact.add', {
                 url: '/add',
                 templateUrl: 'module/add.html',
-                controller: ['$scope', function ($scope) {
+                controller: ['$scope', '$state', 'storageService', function ($scope, $state, storageService) {
 
+                    $scope.save = function () {
+                        if ($scope.item.name === '' || $scope.item.mobile === '') {
+                            alert('Please fill name or mobile number!!!');
+                            return;
+                        }
+                        storageService.save($scope.item);
+
+                        $state.go('contact.list');
+                    };
                 }]
             });
             ///////////////
