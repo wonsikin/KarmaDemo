@@ -22,7 +22,7 @@ angular.module('app', ['ui.router','app.services'])
                     $scope.title = 'contact'
                 }]
             }).state('contact.list', {
-                url: '/contact/list',
+                url: '/list',
                 templateUrl: 'module/list.html',
                 controller: ['$scope', function ($scope) {
                     $scope.contactList = [
@@ -33,7 +33,7 @@ angular.module('app', ['ui.router','app.services'])
                     ];
                 }]
             }).state('contact.add', {
-                url: '/contact/add',
+                url: '/add',
                 templateUrl: 'module/add.html',
                 controller: ['$scope', function ($scope) {
 
