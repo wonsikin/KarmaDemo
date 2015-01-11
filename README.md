@@ -1,0 +1,1 @@
+##A demo for karma test in angular project##
